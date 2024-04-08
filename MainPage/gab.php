@@ -118,9 +118,13 @@
         }.burger-btn{
             margin-top: 15%;
         }.vids > div {
-    margin-bottom: 20px; /* Add margin-bottom to create vertical gap between items */
-    margin-right: 20px; /* Add margin-right to create horizontal gap between items */
-}
+        margin-bottom: 20px; /* Add margin-bottom to create vertical gap between items */
+        margin-right: 20px; /* Add margin-right to create horizontal gap between items */
+        }@media screen and (max-width: 768px) {
+        .label {
+           opacity: 0;
+        }
+     }
 
 
 
@@ -131,8 +135,8 @@
     width: 100%;
     margin-right: 5%;
     
-
 }
+        
 
     </style>
     <!-- dito yung sa yt videos -->
@@ -182,6 +186,14 @@ $videoIDs = array(
                     <span class="nav-item">Purchase</span>
                 </a>
                 <small class="label">Purchase</small>
+            </li>
+            <li>
+                <a href="">
+                
+                    <i class='bx bx-exit' style="font-size: 32px;"></i>
+                    <span class="nav-item">Logout</span>
+                </a>
+                <small class="label">Logout</small>
             </li>
         </ul>
    </nav>
